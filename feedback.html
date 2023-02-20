@@ -124,28 +124,6 @@ input[type="submit"] {
 }
 
 </style>
-<script>
-    function validateForm() {
-      var name = document.forms["myForm"]["name"].value;
-      var email = document.forms["myForm"]["email"].value;
-      var password = document.forms["myForm"]["password"].value;
-
-      if (name != "Keerthana") {
-        alert("Please enter valid name");
-        return false;
-      }
-
-      if (email != "keerthana.201it216@nitk.edu.in") {
-        alert("Please enter valid email");
-        return false;
-      }
-
-      if (password != "123456") {
-        alert("Please enter valid password");
-        return false;
-      }
-    }
-  </script>
 </head>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
@@ -199,22 +177,23 @@ input[type="submit"] {
     </div> -->
   </header>
   
-<div id="feedback-form">
-      <h1 style="margin-left: 100px;">Feedback Form</h1>
-      <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+<!-- Form 1 -->
+  <form name="myForm" onsubmit="return validateForm()">
+    <label>Name:</label>
+    <input type="text" name="name"><br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+    <label>Email:</label>
+    <input type="email" name="email"><br>
 
-        <label for="message1">How was the experience of the website:</label>
+    <label for="message1">How was the experience of the website:</label>
         <textarea id="message" name="message" required style="border: 2px solid black"></textarea>
 
         <label for="message2">Any changes you suggest:</label>
         <textarea id="message" name="message" required style="border: 2px solid black"></textarea>
-        <input type="submit" value="Submit">
-      </form>
+
+    <input type="submit" value="Submit">
+    
+  </form>
     </div>
 <!-- End page content -->
 </div>

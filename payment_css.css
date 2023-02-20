@@ -1,0 +1,80 @@
+
+.body-text {
+  padding: 30px 20px 50px 20px;
+  font-family: "Roboto";
+  font-size: 1em;
+  color: #333;
+  text-align: center;
+  line-height: 1.2em;
+}
+.form-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+  padding-bottom: 30px;
+}
+.card-wrapper {
+  background-color: #70d3ec;
+  width: 100%;
+  display: flex;
+
+}
+.personal-information {
+  color: black;
+  padding: 1px 0;
+  text-align: center;
+}
+
+input {
+  margin: 1px 0;
+  padding-left: 3%;
+  font-size: 14px;
+}
+input[type="text"]{
+  display: block;
+  height: 50px;
+  width: 100%;
+  
+}
+input[type="email"]{
+  display: block;
+  height: 50px;
+  width: 100%;
+  
+}
+input[type="submit"]{
+  display: block;
+  height: 60px;
+  width: 100%;
+  
+  background-color: #3C8DC5;
+  color: #fff;
+  margin-top: 2px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+input[type="submit"]:hover{
+  background-color: #6FB7E9;
+  transition: 0.3s ease;
+}
+.column-left {
+  width: 48%;
+  float: left;
+  margin-bottom: 30px;
+}
+.column-right {
+  width: 48%;
+  float: right;
+}
+.space{
+  margin-bottom: 30px;
+}
+
+.error{
+  color: white;
+}
+
+
+
